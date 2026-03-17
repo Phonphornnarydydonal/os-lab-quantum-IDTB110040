@@ -1,0 +1,12 @@
+Run 1: 85
+Run 2: 80
+Run 3: 80
+Run 4: 84
+Run 5: 14
+
+Explanation:
+Multiple processes read inventory.txt simultaneously.
+Since reading and writing are separate operations,
+some processes overwrite each other's updates.
+Because Linux schedules processes differently each time,
+the final inventory number changes every run.
